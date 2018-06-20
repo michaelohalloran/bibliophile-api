@@ -2,10 +2,4 @@ language: node_js
 node_js: lts/*
 services:
 - mongodb
-deploy:
-  provider: heroku
-  api_key:
-    secure: EhyKBPfdcP/Znk/C1/TsPpsP/FEpNyMbV0fTitaqRdsKg8a4ffxeRIaGdhVraNjiQl3P44kcZMF8v6p4GrqfO6wYm9cn0vdH8Yqz5JMb4PxL00dZ7Ib3KAL7ZpGBlEY6uPG2A6fmqnYflT1WtieNSiKz5skxB6w3hkufcebL0vkIgtiaNEYv/uLgdptGWXQtOAYozNcB9I05/8Z3ZVQ9v+MnO6rR4HCRmASGfm8uXAQSE2GpswLaFRnaS+edi+tzdyeUWlXuVoLO1U92oxbOSFGzl4Rh6/OjN30MS6A3ijj9rOHykDOUIFAQmL1ezm9lW7SeSaFfVID+YCQiVDWBcUznbh0QJ1mX4g/hK3JbwOroJuY2AqhipuWRHzTwemmvGVS05+JMNqDMc4swz9aFIjTuSLV29sCz9UMEa6AQGVi5AZHK1mM7jJdzjIgdrKW8xh96qqIVQJVStm1RmcFmKQ9MPwu1gNgXa9qxAEcNtuW39cRnNpjxo94gakiTVwN2V8Y6cS0fq/egtQjcoCa0gnUsbz2DnBTxmECdb8XqrSnU93UXmgpkazTeo0WhvazOCRIrJQwtm/NSteZsqa2SBtPZQ5Cd8ewz362/UHRou5IIW7MccMERw1mKJGccQNeE3tUDdoaKfFr8zGAlwro4vao1iNirBQUwu++TzcwOcgM=
-  app: bibliophile-api
-  on:
-    repo: mike31415/bibliophile-api
+
