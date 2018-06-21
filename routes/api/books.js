@@ -71,7 +71,7 @@ router.post('/', passport.authenticate('jwt', {session:false}), (req,res)=> {
     bookFields.review = '';
     
     //check if book already exists 
-    Book.findOne({title: req.body.title})
+    Book.findOne({user: req.user.id, title: req.body.title})
         .then(title=> {
             if(title) {
                 res.status(400).json({bookexists: 'You already entered this book'});
