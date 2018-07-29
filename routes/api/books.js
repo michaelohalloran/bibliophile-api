@@ -3,7 +3,6 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
-const {JWT_SECRET} = require('../../config/config');
 const validateBookInput = require('../../validation/book');
 const validateReviewInput = require('../../validation/review');
 

@@ -9,7 +9,7 @@ const bcrypt = require('bcryptjs');
 const {app} = require('../server');
 const {User} = require('../models/User');
 const {Book} = require('../models/Book');
-const {DATABASE_URL, TEST_DATABASE_URL, PORT, JWT_SECRET} = require('../config/config');
+const keys = require('../config/keys');
 
 // const expect = chai.expect;
 const expect = chai.expect;
