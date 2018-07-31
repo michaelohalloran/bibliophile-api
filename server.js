@@ -5,6 +5,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const app = express();
+const keys = require('./config/keys');
 
 //connect to client
 app.use(
@@ -47,8 +48,8 @@ app.get('/', (req,res)=> {
     res.send('testing route');
 })
 
-app.listen(process.env.PORT, ()=> {
-    console.log(`Bibliophile server started on port ${process.env.PORT}`);
+app.listen(keys.PORT, ()=> {
+    console.log(`Bibliophile server started on port ${keys.PORT}`);
 });
 
 module.exports = app;
