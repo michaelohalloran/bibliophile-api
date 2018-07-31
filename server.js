@@ -1,15 +1,15 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const app = express();
-const keys = require('./config/keys');
 
 //connect to client
 app.use(
     cors({
-        origin: keys.CLIENT
+        origin: process.env.CLIENT
     })
 );
 //Use bodyParser
@@ -37,7 +37,7 @@ app.use('/api/books', books);
 
 //Db config
 mongoose
-    .connect(keys.DATABASE_URL)
+    .connect(process.env.DATABASE_URL)
     .then(()=> console.log('Connected to MongoDB'))
     .catch((err)=>console.log(err));
 
@@ -47,8 +47,8 @@ app.get('/', (req,res)=> {
     res.send('testing route');
 })
 
-app.listen(keys.PORT, ()=> {
-    console.log(`Bibliophile server started on port ${keys.PORT}`);
+app.listen(process.env.PORT, ()=> {
+    console.log(`Bibliophile server started on port ${process.env.PORT}`);
 });
 
 module.exports = app;

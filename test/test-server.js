@@ -9,7 +9,6 @@ const bcrypt = require('bcryptjs');
 const {app} = require('../server');
 const {User} = require('../models/User');
 const {Book} = require('../models/Book');
-const keys = require('../config/keys');
 
 // const expect = chai.expect;
 const expect = chai.expect;
